@@ -5,7 +5,7 @@ The model takes in a 10x10 image representing any digit as an input, and outputs
 
 ### Architecture
 The model has 4 layers:
-- An input layer consisting of 100 neurons, representing a 10x10 image (thus a total of 100 pixels, one neuron per pixel). The activation of a neuron in the input layer will be 1 if the corresponding pixel is part of the digit's shape to indentify, else it will be 0
+- An input layer consisting of 100 neurons, representing a 10x10 image (thus a total of 100 pixels, one neuron per pixel). The activation of a neuron in the input layer will be 1 if the corresponding pixel is part of the digit's shape to identify, else it will be 0
 - Two hidden layers each consisting of 81 neurons
 - An output layer, where the most active neuron will be the recognized digit
 
