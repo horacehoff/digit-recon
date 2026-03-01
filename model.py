@@ -1,7 +1,7 @@
 from img2pixels import img_to_pixels
 import math
 import json
-
+import sys
 
 class Neuron:
     def __init__(self, value):
@@ -49,6 +49,6 @@ def load_weights_and_biases(filename):
     return weights, biases
 
 
-# HOW TO RUN THE MODEL 👇
-# weights, biases = load_weights_and_biases("weights_biases.json")
-# print(calculate("img.png", weights, biases))
+weights, biases = load_weights_and_biases("weights_biases.json")
+result = calculate(sys.argv[1], weights, biases)
+print("EXPECTED NUMBER: "+str(result.index(max(result))))
