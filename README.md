@@ -3,6 +3,12 @@ A custom neural network written from scratch in Python with no external librarie
 
 The model takes in a 10x10 image representing any digit as an input, and outputs the most likely digit to be represented in the image. The whole architecture was written in less than a day in Python, but is not meant to be optimized at all. The goal of this project was to challenge myself and see how fast I could write a custom neural network from scratch, with no prior experience in machine learning.
 
+### Running the model
+To run the model, simply clone the repository and run the following command:
+```sh
+python model.py <image_file>
+```
+
 ### Architecture
 The model has 4 layers:
 - An input layer consisting of 100 neurons, representing a 10x10 image (thus a total of 100 pixels, one neuron per pixel). The activation of a neuron in the input layer will be 1 if the corresponding pixel is part of the digit's shape to identify, else it will be 0
